@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/png" href="../icons/universe.png" sizes="32x32" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a href="../index.html">
+        <h1 class="header__logo">SPACEBLOG</h1>
+      </a>
+      <nav class="header__navigation">
+        <a href="about.html">ABOUT US</a>
+        <a id="headButtonLogin" href="login.html">LOGIN</a>
+      </nav>
+    </div>
+  </header>
+  <section class="form-article">
+    <h1>Create a new post</h1>
+    <form action="" onsubmit="return false;">
+      <p>Title</p>
+      <input id="title" type="text" maxlength="70" required>
+      <p>Content</p>
+      <textarea name="content" id="input-article-content" cols="30" rows="30" required></textarea>
+      <p>Add image url:</p>
+      <input type="url" id="imageUrl" pattern="https?://.+" required>
+      <p>Select tags for an article:</p>
+      <div class="form-article__tags">
+        <label><input type="checkbox" value="Planets"> Planets</label>
+        <label><input type="checkbox" value="Stars"> Stars</label>
+        <label><input type="checkbox" value="Cosmonautics"> Cosmonautics</label>
+      </div>
+      <div class="save">
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </section>
+  <div class="footer">
+    <p>© Copyright 2020. All rights reserved.<br>
+      Site development: Vlad Sadouski & Yana Zayats.</p>
+  </div>
+  <script src="../js/modules/login-module.js" type="module"></script>
+  <script src="../js/article-actions.js" type="module"></script>
+</body>
+
+</html>

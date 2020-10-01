@@ -1,0 +1,22 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 50px auto;
+  width: 70%;
+  text-align: justify;
+}
+
+.about-us__subtitle {
+  font-size: 22px;
+}
+
+.about-us p {
+  font-size: 18px;
+}
+
+iframe {
+  align-self: center;
+  margin: 40px;
+}

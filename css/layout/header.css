@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+  background-color: #121212;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 100px;
+}
+
+.wrapper a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.wrapper a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.header__logo {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+}
+
+.header__navigation a {
+  padding: 0 25px;
+  transition: 0.3s;
+}  
+
+.header__navigation a:hover {
+  color: rgb(162, 133, 212);
+}
+
+.header__navigation :nth-child(1) {
+  border-right: 1.5px solid white;
+}

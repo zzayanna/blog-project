@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Blog</title>
+  <link rel="icon" type="image/png" href="icons/universe.png" sizes="32x32" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a href="index.html">
+        <h1 class="header__logo">SPACEBLOG</h1>
+      </a>
+      <nav class="header__navigation">
+        <a href="pages/about.html">ABOUT US</a>
+        <a id="headButtonLogin" href="pages/login.html">LOGIN</a>
+      </nav>
+    </div>
+  </header>
+  <div class="banner">
+    <h2>Blog about space and things</h2>
+  </div>
+  <nav class="navigation-posts">
+      <div class="rubrics">
+        <p class="rubric-active">All</p>
+        <p>Planets</p>
+        <p>Astrophysics</p>
+        <p>Cosmonautics</p>
+      </div>
+      <button class="add-post">Create post</button>
+    </nav>
+  <section class="articles-list"></section>
+  <script src="js/index.js" type="module"></script>
+  <script src="js/load-feed.js" type="module"></script>
+  <div class="footer">
+    <p>© Copyright 2020. All rights reserved. <br>
+    Site development: Vlad Sadouski & Yana Zayats.</p>
+  </div>
+</body>
+
+</html>

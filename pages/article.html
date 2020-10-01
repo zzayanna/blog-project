@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/png"  href="../icons/universe.png" sizes="32x32"/>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <a href="../index.html">
+        <h1 class="header__logo">SPACEBLOG</h1>
+      </a>
+      <nav class="header__navigation">
+        <a href="pages/about.html">ABOUT US</a>
+        <a id="headButtonLogin" href="pages/login.html">LOGIN</a>
+      </nav>
+    </div>
+  </header>
+  <article class="article">
+    <div class="article__header">
+      <div class="article__info">
+        <p></p>
+        <p></p>
+      </div>
+      <div class="menu-dropdown">
+        <input id="chek1" class="menu-dropdown__button" type="checkbox">
+        <label for="chek1">&#x22EE</label>
+        <ul class="menu-dropdown__items">
+          <li id="button-edit-post">Edit post</li>
+          <li id="button-delete-post">Delete post</li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="article__title"></h1>
+    <img class="article_image" src="">
+    <p class="article__content"></p>
+    <div class="article__tags"></div>
+    <div class="article__actions">
+      <p></p>
+      <div class="likes">
+        <p>&#9825</p>
+        <p></p>
+      </div>
+    </div>
+  </article>
+  <section class="comment">
+    <!-- <form name="commentForm" onsubmit="let comment = new Comment(); comment.addComment();"> -->
+      <div class="comment__author">
+        <p>&#128100</p>
+        <p></p>
+      </div>
+      <div>
+        <textarea id="input-comment" name="inputComment" cols="50" rows="3" placeholder="Write a comment..."></textarea>
+      </div>
+      <input type="submit" value="Publish" disabled>
+    <!-- </form> -->
+  </section>
+  <section class="comment-list"></section>
+  <div class="footer">
+    <p>© Copyright 2020. All rights reserved.<br>
+      Site development: Vlad Sadouski & Yana Zayats.</p>
+  </div>
+  <script  src="../js/modules/login-module.js" type="module" ></script>
+  <script>
+    const publishButton = document.querySelector('input[type="submit"]');
+    const comment = document.getElementById('input-comment');
+    comment.oninput = () => {
+      if (comment.value) {
+        publishButton.classList.add('fulfilled');
+        publishButton.disabled = false;
+      } else {
+        publishButton.classList.remove('fulfilled');
+      }
+    }
+  </script>
+  <script src="../js/load-article.js" type="module"></script>
+  <script src="../js/comments.js" type="module"></script>
+</body>
+</html>

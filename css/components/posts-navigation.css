@@ -1,0 +1,37 @@
+.navigation-posts {
+  margin: 80px auto 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.rubrics {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  font-size: 18px;
+}
+
+.rubrics p {
+  cursor: pointer;
+}
+
+.rubric-active {
+  color: rgb(162, 133, 212);
+}
+
+.add-post {
+background-color: white;
+color: black;
+border: 1px solid black !important;
+padding: 10px 30px !important;
+font-size: 14px;
+transition: 0.3s;
+cursor: pointer;
+}
+
+.add-post:hover {
+  background-color: #121212;
+  color: white;
+}

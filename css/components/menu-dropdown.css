@@ -1,0 +1,38 @@
+.menu-dropdown__button, .menu-dropdown__items {
+  display: none;
+}
+
+.menu-dropdown label {
+  cursor: pointer;
+  font-size: 22px;
+  color: #424242;
+}
+
+.menu-dropdown__items {
+  position: absolute; 
+  padding: 0;
+  list-style: none; 
+  border: 1px solid #D5D8DC;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 2px 5px 5px rgba(0,0,0,0.1);;
+}
+
+.menu-dropdown__items li {
+  padding: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.menu-dropdown__items li:hover {
+background-color: #D5D8DC;
+}
+
+.menu-dropdown__items a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-dropdown :checked ~ ul {
+  display: block; 
+ }

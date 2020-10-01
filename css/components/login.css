@@ -1,0 +1,40 @@
+.login-form {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-form h3 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+#username, #password, #button-login {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 50px;
+  border: 2px solid rgb(82, 66, 109);
+}
+
+#username, #password {
+  padding: 5px 0 5px 20px;
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#button-login {
+  background: rgb(82, 66, 109);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#button-login:hover {
+  background-color: rgb(105, 85, 141);
+  border: 1px solid rgb(105, 85, 141);
+}
